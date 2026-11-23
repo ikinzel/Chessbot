@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Main Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <div class="clock-panel">
+    <div id="chess-clocks">
+      <p>White (you)<br><strong id="white-clock">5:00</strong></p>
+      <p>Black (computer)<br><strong id="black-clock">5:00</strong></p>
+    </div>
+    
+    <button type="button" id="clock-start">Start</button>
+    <button type="button" id="clock-stop">Stop</button>
+  </div>
+  
+
+
+    <h1>GAME1 Chess Game</h1>
+
+    <form id="move-form">
+        <label for="move-input">Your move:</label>
+        <input id="move-input" type="text" placeholder="e.g. e4" required>
+        <button type="submit" id="move-button">Move</button>
+      </form>
+    
+      <p id="output">Your move will appear here.</p>
+      <p id="computer-move"></p> 
+  
+
+      <h2> Move history </h2>
+      <p id="moves"></p> 
+
+      <div id="board"></div>
+
+
+
+    
+
+
+
+      <!-- ESP Communication -->
+      <!-- <section id="esp-panel">
+        <h2>ESP connection</h2>
+      
+        <button id="esp-connect" type="button">Connect ESP</button>
+      
+        <p id="esp-status" role="status">Not connected</p>
+      
+        <p>Voltage: <span id="esp-voltage">—</span> V</p>
+      </section> -->
+
+      <!-- scripts-->
+      
+      <script type="module" src="./esp-voltage.js"></script>
+
+
+      <script type="module" src="JS/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+html {
+  background: #1a241c;
+}
+
+body {
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1c211d;
+  background: #f4efe4;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input,
+button {
+  font: inherit;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+}
+
+input {
+  border: 1px solid #c9bfa8;
+  background: #fffdf8;
+}
+
+button {
+  border: 0;
+  background: #2f5d3a;
+  color: #f7f4ea;
+  cursor: pointer;
+}
+
+#ask-engine {
+  background: #2a2f2b;
+}
+
+#output,
+#engine-output,
+#moves {
+  padding: 0.6rem 0.8rem;
+  background: #ebe4d4;
+  border-radius: 8px;
+}
+
+#computer-moves {
+  background: #e7efe5;
+  border-left: 4px solid #2f5d3a;
+  border-radius: 8px;
+  padding: 16px;
+  font-weight: bold;
+}
+
+#computer-moves:empty {
+  display: none;
+}
+
+
+#chess-clocks {
+  display: flex;
+  gap: 12px;
+}
+
+#chess-clocks p {
+  flex: 1;
+  margin: 0 0 10px;
+  padding: 10px;
+  border: 1px solid #b8b09c;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#chess-clocks strong {
+  font: bold 2rem monospace;
+}
+
+
+
+
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: min(100%, 400px);
+  margin: 24px auto 0;
+}
+
+.board-square {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  background: #f2e8d5;
+  color: #18241c;
+  font-size: clamp(1rem, 7vw, 2rem);
+  position: relative;
+}
+.board-square.dark {
+  background: #91a287;
+}
+.square-label {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font: 0.65rem monospace;
+}
+.clock-panel {
+  border: 1px solid #b8b09c;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
